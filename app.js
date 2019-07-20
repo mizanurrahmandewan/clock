@@ -41,7 +41,7 @@ navigator.geolocation.watchPosition(function(position) {
   const lon = position.coords.longitude;
   const key = `659864ee77400e4c4baa8f26d088d781`;
   const http = new XMLHttpRequest();
-  const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`;
 
   http.open('GET', url);
   http.send();
